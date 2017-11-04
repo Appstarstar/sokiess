@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/activity_viewinvoice">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_id_quick_order"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#267083"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="10dp"
+                >
+
+            <LinearLayout
+                android:id="@+id/layout_quick_order"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="6dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/name_invoice"
+                    android:layout_width="375dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.07" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Invoice_no."
+                    android:textSize="16dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    />
+
+                <EditText
+                    android:id="@+id/et_invoiveno_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Date"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    />
+
+                <EditText
+                    android:id="@+id/date_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Mobile_no."
+                    android:textSize="16dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/et_mobile_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Address"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    />
+
+                <EditText
+                    android:id="@+id/addres_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="E-mail"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    />
+
+                <EditText
+                    android:id="@+id/email_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Fax No."
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/fax_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Kindly Attention"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:id="@+id/kind_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_gst"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="GST Rate"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/gst_rate_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Gst Percentage"
+                    android:textSize="16dp"
+                    />
+
+
+                <EditText
+                    android:id="@+id/gst_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Remark"
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/remark_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Total Amount"
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/total_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Packing Rate"
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/packing_rate_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Packing Percentage"
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/packing_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Prepared By"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    />
+
+                <EditText
+                    android:id="@+id/et_prepared_by_quot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Prepared Mobile No."
+                    android:textSize="16dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    />
+
+                <EditText
+                    android:id="@+id/et_prepare_mobile_quot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+                <EditText
+                    android:id="@+id/et_prepared_desi_wquot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Other Charges"
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_other_quot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+                <TextView
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Net Amount"
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/net_amount_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+
+
+                <Button
+                    android:id="@+id/btn_OK_quot"
+                    android:layout_width="500dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="170dp"
+                    android:background="@drawable/oval"
+                    android:text="OK" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

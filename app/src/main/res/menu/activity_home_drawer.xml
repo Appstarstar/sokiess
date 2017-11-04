@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group23">
+        <item
+            android:id="@+id/sokhi_create_order"
+            android:title="Create Order"
+            />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group231">
+        <item
+            android:id="@+id/sokhi_create_order1"
+            android:title="Create Order"
+            />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/sokhi_address_master"
+            android:title="Address Master" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group30">
+
+        <item
+            android:id="@+id/sokhi_rate_master"
+            android:title="Rate Master" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group9">
+        <item
+            android:id="@+id/sokhi_quotation_master"
+            android:title="Quotation Master" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group21">
+
+        <item
+            android:id="@+id/sokhi_invoice"
+            android:title="Invoice" />
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group15">
+
+        <item
+            android:id="@+id/sokhi_purchase"
+            android:title="Purchase Order" />
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group20">
+
+        <item
+            android:id="@+id/sokhi_dashboard"
+            android:title="Order Assigned Form" />
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group26">
+
+        <item
+            android:id="@+id/sokhi_Order_assign_form_admin"
+            android:title="Order Assigned By Admin" />
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group7">
+
+        <item
+            android:id="@+id/sokhi_accepted_order_history"
+            android:title="Accepted Order History " />
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group8">
+
+        <item
+            android:id="@+id/sokhi_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

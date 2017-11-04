@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context="nimbl3.com.sokies.Activity.CreateRateMaster">
+
+
+       <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            android:padding="1dp"
+            android:weightSum="1"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-40dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="382dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Company Name"
+                    android:textColor="@color/light_blue_500"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_company"
+                    android:layout_width="395dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_weight="0.07" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text=" Date"
+                    android:textColor="@color/light_blue_500"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text=" Date"
+                    android:gravity="right"
+                    android:textColor="@color/light_blue_500"
+                    android:layout_marginTop="-40dp"
+                    android:id="@+id/tv_order_date21"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16dp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_person_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                   >
+
+                    <EditText
+                        android:id="@+id/et_personname1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:hint="Concern Person Name*"
+                        android:textColor="@color/light_blue_500"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_itemname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                  >
+
+                    <EditText
+                        android:id="@+id/et_itemname1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:hint="@string/hint_itemname"
+                        android:textColor="@color/light_blue_500" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                  >
+
+                    <EditText
+                        android:id="@+id/et_rate1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:hint="@string/hint_rate"
+                        android:textColor="@color/light_blue_500" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_remarkrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                  >
+
+                    <EditText
+                        android:id="@+id/et_remarks1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:hint="@string/hint_remarkrate"
+                        android:textColor="@color/light_blue_500" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Submit"
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_rate_submit1"
+                    android:background="@drawable/oval"/>
+               </LinearLayout>
+           </ScrollView>
+        </RelativeLayout>
+
+

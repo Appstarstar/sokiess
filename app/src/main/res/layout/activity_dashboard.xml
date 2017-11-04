@@ -1,0 +1,272 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_sign_up2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_id_hot"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:background="@color/green"
+            card_view:cardCornerRadius="0dp"
+            card_view:contentPadding="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="3dp">
+            <LinearLayout
+                android:id="@+id/layout_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:background="@color/light_blue_500"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="6dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_hot"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Total P.O" />
+
+                <TextView
+                    android:id="@+id/tv_hot_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textSize="19dp"
+                    android:text="854" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_id_booked"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            card_view:cardCornerRadius="0dp"
+            card_view:contentPadding="0dp"
+            android:layout_marginTop="-160dp"
+           >
+            <LinearLayout
+                android:id="@+id/layout_booked"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/green_200"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_booked"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Booked Leads" />
+
+                <TextView
+                    android:id="@+id/tv_booked_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text=""
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/btn_booked"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:text="View Leads" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_id_cold"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            card_view:cardCornerRadius="0dp"
+            card_view:contentPadding="0dp"
+            android:layout_marginTop="10dp"
+           >
+            <LinearLayout
+                android:id="@+id/layout_cold"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/green_300"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_cold"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Quotation" />
+
+                <TextView
+                    android:id="@+id/tv_cold_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text="985"
+                    android:textSize="19dp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_id_warm"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            card_view:cardCornerRadius="0dp"
+            android:layout_gravity="right"
+            card_view:contentPadding="0dp"
+            android:layout_marginTop="-160dp"
+            >
+            <LinearLayout
+                android:id="@+id/layout_warm"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:background="@color/yellow_A200"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_warm"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Warm Leads" />
+
+                <TextView
+                    android:id="@+id/tv_warm_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text=""
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/btn_warm"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:text="View Leads" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_id_outbox"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            card_view:cardCornerRadius="0dp"
+            android:layout_gravity="right"
+            card_view:contentPadding="0dp"
+            android:layout_marginTop="-330dp"
+           >
+            <LinearLayout
+                android:id="@+id/layout_outbox"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:background="@color/grey_500"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_outbox"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Clients" />
+
+                <TextView
+                    android:id="@+id/tv_outbox_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text="240"
+                    android:textSize="19dp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_id_outbox3"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            card_view:cardCornerRadius="0dp"
+            android:layout_gravity="right"
+            card_view:contentPadding="0dp"
+            android:layout_marginTop="10dp"
+           >
+            <LinearLayout
+                android:id="@+id/layout_qualified1"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:background="@color/yellow_300"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_qualified_leads"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Order " />
+
+                <TextView
+                    android:id="@+id/tv_qualified_leads_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text="101"
+                    android:textSize="19dp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+            </LinearLayout>
+</ScrollView>

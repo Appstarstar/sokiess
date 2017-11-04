@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nimbl3.com.sokies">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/profile"
+        android:label="sokhi"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.Login"
+            android:label="Order Form"
+            android:parentActivityName=".Activity.Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.CompleteRateMaster"
+            android:label="Rate Master"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.Dashboard"
+            android:label="Dashboard"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.Create_rate_master"
+            android:label="@string/title_activity_complete_rate_master"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+
+        <activity
+            android:name=".Activity.OrderStatus"
+            android:label="Order Status"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.EfficiencyStatus"
+            android:label="Dashboard"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.OrderForm"
+            android:label="@string/title_activity_create_ORDER"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity android:name=".Activity.AcceptedOrderHistory"
+            android:label="@string/title_activity_accept_ORDER"
+            android:parentActivityName=".Activity.Home">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.SearchOrder"
+            android:label="@string/title_activity_search_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.AddressMaster"
+            android:label="Address Master"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.content_updateaddressmaster"
+            android:label="@string/title_activity_content_updateaddressmaster"/>
+
+        <activity
+            android:name=".Activity.Updateaddressmaster"
+            android:label="@string/title_activity_updateaddressmaster"/>
+
+        <activity
+            android:name=".Activity.Update_orderform"
+            android:label="@string/title_activity_update_orderform"/>
+
+        <activity
+            android:name=".Activity.Update_order"
+            android:label="@string/title_activity_update_order"
+            />
+        <activity
+            android:name=".Activity.Viewinvoice"
+            android:label="@string/title_activity_viewinvoice"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.Invoice"
+            android:label="@string/title_activity_Invoice"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.Purchase"
+            android:label="@string/title_activity_view_purchase_order"
+
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+
+        <activity
+            android:name=".Activity.Quotation"
+            android:label="@string/title_activity_quotation"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.Created_orderform_admin"
+            android:label="@string/title_activity_created_orderform_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.Purchase_order"
+            android:label="@string/title_activity_purchase_order"
+
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity android:name=".Activity.Home" />
+        <activity android:name=".Activity.QuotationMaster" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.Acccept_orderform"
+            android:label="@string/title_activity_assignedorder_projectmanager"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.accept_assignform"
+            android:label="@string/title_activity_view_ORDER"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.Assign_order"
+            android:label="@string/title_activity_acccept_orderform"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.Accept_order_form"
+            android:label="@string/title_activity_accept_order_form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.Admin_accepted_form"
+            android:label="@string/title_activity_assign_orderform_admin"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.Assignform_admin"
+            android:label="@string/title_activity_assignform_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.accept_assignform_admin"
+            android:label="@string/title_activity_view_ORDER"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.Assign_orderform_admin"
+            android:label="@string/title_activity_admin_accepted_form"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.Adminaccepted"
+
+            android:label="@string/title_activity_view_ORDER"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+        <activity
+            android:name=".Activity.Assignedorder_projectmanager"
+            android:label="@string/title_activity_accept_assignform"
+            android:parentActivityName=".Activity.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.Home" />
+        </activity>
+    </application>
+
+</manifest>

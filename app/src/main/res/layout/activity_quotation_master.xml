@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nimbl3.com.sokies.Activity.QuotationMaster"
+    tools:showIn="@layout/activity_quotation_master">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_id_quick_order"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#267083"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_quick_order"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/quotation_comp"
+                android:layout_width="375dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.07" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="Quotation Number"
+                android:textColor="@color/light_blue_500"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text=" No."
+                android:gravity="right"
+                android:textColor="@color/light_blue_500"
+                android:layout_marginTop="-40dp"
+                android:id="@+id/tv_quotation_number_quot"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_current_date_quot"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Auto Date"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Address"
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_blue_light"
+                />
+
+            <EditText
+                android:id="@+id/et_address_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="E-mail"
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_blue_light"
+                />
+
+            <EditText
+                android:id="@+id/et_email_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Fax No."
+                android:textSize="16dp"
+                />
+
+            <EditText
+                android:id="@+id/et_et_whats_app_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Kindly Attention"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/et_kind_attn_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Price"
+                android:textSize="16dp"
+                />
+
+            <EditText
+                android:id="@+id/et_price_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_developer"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="GST"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="16dp"
+                />
+
+            <EditText
+                android:id="@+id/et_gst_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Inspection"
+                android:textSize="16dp"
+                />
+
+
+            <EditText
+                android:id="@+id/et_inspection_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Payment"
+                android:textSize="16dp"
+                />
+
+            <EditText
+                android:id="@+id/et_payment_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Prepared By"
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_blue_light"
+                />
+
+            <EditText
+                android:id="@+id/et_prepared_by_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Prepared Mobile No."
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_blue_light"
+                />
+
+            <EditText
+                android:id="@+id/et_prepare_mobile_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Prepared Designation                                                                                                       "
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_blue_light"
+                />
+
+            <EditText
+                android:id="@+id/et_prepared_desi_wquot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <TextView
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Delivery"
+                android:textSize="16dp"
+                />
+
+            <EditText
+                android:id="@+id/et_delivery_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+            <TextView
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="validity"
+                android:textSize="16dp"
+                />
+
+            <EditText
+                android:id="@+id/et_validity_quot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+
+
+            <Button
+                android:id="@+id/btn_OK_quot"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="80dp"
+                android:gravity="center"
+                android:background="@drawable/oval"
+                android:text="OK" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

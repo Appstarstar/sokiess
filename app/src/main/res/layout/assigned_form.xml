@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_qck_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue_800"
+                card_view:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/orde"
+                    android:layout_width="120dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Order no."
+                    android:textColor="@color/blue_800"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/orde_no1"
+                    android:layout_width="120dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Hello Card"
+                    android:textColor="@color/blue_800"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/orde_no123"
+                    android:layout_width="180dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Accept Order Form"
+                    android:textColor="@color/blue_800"
+                    android:textSize="18sp" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

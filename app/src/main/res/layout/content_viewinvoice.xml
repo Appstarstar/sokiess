@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nimbl3.com.sokies.Activity.Viewinvoice"
+    tools:showIn="@layout/activity_viewinvoice">
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+    <LinearLayout
+        android:id="@+id/layout_qck_order"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name_invoice1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:text="Invoice Number"
+            android:background="@drawable/round_red"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/addres_invoice"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Invoice Number"
+            android:background="@drawable/round_red"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+        android:id="@+id/fax_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/kind_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/mobile_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Company Name"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/email_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/invoice_no_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Company Name"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/date_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/prepared_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/prepared_mobile_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Company Name"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/prepared_designation_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/remark_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/total_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Company Name"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/packing_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/packing_rate_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/gst_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Company Name"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/gst_rate_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/other_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/net_amount_invoice"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Invoice Number"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
